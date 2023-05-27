@@ -22,6 +22,18 @@ const Formulario = () => {
             <label className="block text-gray-700 uppercase font-bold" htmlFor="email">Email</label>
             <input type="email" id="email" className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" placeholder="Email" />
           </div>
+
+          <div className="mb-5">
+            <label className="block text-gray-700 uppercase font-bold" htmlFor="alta">Alta</label>
+            <input type="date" id="alta" className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
+          </div>
+
+          <div className="mb-5">
+            <label className="block text-gray-700 uppercase font-bold" htmlFor="sintomas">Sintomas</label>
+            <textarea type="date" id="sintomas" className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" placeholder="describe los sintomas"/>
+          </div>
+
+          <input type="submit" className="bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-800 cursor-pointer transition-all" value="Agregar paciente"/>
         </form>
     </div>
   )
