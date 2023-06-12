@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  react-citas-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: npm run dev
+    ports:
+      - "5173:${PORT}"
+    volumes:
+      - .:/https/app
+      - /https/app/node_modules
